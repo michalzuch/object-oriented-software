@@ -1,2 +1,5 @@
 *.o
+*.ppu
+App
 Paradigms
+Tests

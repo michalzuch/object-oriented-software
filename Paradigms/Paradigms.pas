@@ -1,92 +1,91 @@
 
-Program Paradigms;
+Unit Paradigms;
 
-Procedure PrintNumbers(Var numbers: Array Of integer; amount: integer);
+Interface
 
-Var 
-  i: integer;
-Begin
-  For i := 1 To amount Do
-    Begin
-      write(numbers[i], ' ');
-    End;
-  writeln;
-End;
+Procedure GenerateRandomNumbers(Var numbers: Array Of integer);
+Procedure GenerateRandomNumbers(Var numbers: Array Of integer; lowerLimit: integer; upperLimit: integer; amount: integer);
+Procedure SortNumbers(Var numbers: Array Of integer);
+
+
+Implementation
+
+Uses crt;
 
 Procedure GenerateRandomNumbers(Var numbers: Array Of integer);
 
 Var 
   i: integer;
   num: integer;
+
 Begin
-write('Random numbers: ');
   Randomize;
-  For i := 1 To 50 Do
+  For i := 0 To 49 Do
     Begin
       num := random(101);
       numbers[i] := num;
     End;
-    PrintNumbers(numbers, 50);
 End;
+
 
 Procedure GenerateRandomNumbers(Var numbers: Array Of integer; lowerLimit: integer; upperLimit: integer; amount: integer);
 
 Var 
   i: integer;
-  num: integer;
+
 Begin
   If lowerLimit > upperLimit Then
     Begin
+      TextColor(14);
       writeln('Lower limit cannot be greater than upper limit');
+      TextColor(7);
       exit;
     End;
 
-  write('Random numbers: ');
-  Randomize;
-  For i := 1 To amount Do
+  If lowerLimit = upperLimit Then
     Begin
-      num := random(upperLimit + 1 - lowerLimit) + lowerLimit;
-      numbers[i] := num;
+      TextColor(14);
+      writeln('Lower limit and upper limit cannot be the same');
+      TextColor(7);
+      exit;
     End;
-  PrintNumbers(numbers, amount);
+
+  If amount < 1 Then
+    Begin
+      TextColor(14);
+      writeln('Amount cannot be less than 1');
+      TextColor(7);
+      exit;
+    End;
+
+  Randomize;
+  For i := 0 To amount - 1 Do
+    Begin
+      numbers[i] := Random(upperLimit + 1 - lowerLimit) + lowerLimit;
+    End;
 End;
 
-Procedure SortNumbers(Var numbers: Array Of integer; amount: integer);
+
+Procedure SortNumbers(Var numbers: Array Of integer);
 
 Var 
-  i, j, temp: integer;
+  i: integer;
+  j: integer;
+  temp: integer;
+
 Begin
-  write('Sorted numbers: ');
-  For i := 1 To amount Do
+  For i := 0 To Length(numbers) - 2 Do
     Begin
-      For j := i + 1 To amount Do
+      For j := 0 To Length(numbers) - 2 Do
         Begin
-          If numbers[i] > numbers[j] Then
+          If numbers[j] > numbers[j + 1] Then
             Begin
-              temp := numbers[i];
-              numbers[i] := numbers[j];
-              numbers[j] := temp;
+              temp := numbers[j];
+              numbers[j] := numbers[j + 1];
+              numbers[j + 1] := temp;
             End;
         End;
     End;
-  PrintNumbers(numbers, amount);
 End;
 
-Var 
-  numbers_1: array[1..50] Of integer;
-  numbers_2: array[1..5] Of integer;
-
-
-Begin
-  writeln('Generating 50 random numbers between 0 and 100 and sorting them');
-  GenerateRandomNumbers(numbers_1);
-  SortNumbers(numbers_1, 50);
-  writeln;
-
-  writeln('Generating 5 random numbers between 25 and 35 and sorting them');
-  GenerateRandomNumbers(numbers_2, 25, 35, 5);
-  SortNumbers(numbers_2, 5);
-  writeln;
-
-  readln;
 End.
