@@ -9,3 +9,13 @@ Projects built during Object Oriented Software classes at Jagiellonian Universit
 ✅ 4.0 Add parameters to the sampling procedure defining the sampling range: from, to, how much | [Commit](https://github.com/michalzuch/object-oriented-software/commit/215ca357d8b200a82c3630738c9bddd4028cf9a4)  
 ✅ 4.5 5 unit tests for procedures | [Commit](https://github.com/michalzuch/object-oriented-software/commit/6f5ef20114189fa3631e41f3c56fb63994a95439)  
 ✅ 5.0 Bash script for running Pascal applications via docker | [Commit](https://github.com/michalzuch/object-oriented-software/commit/a6a9c2b9050aaedd082899cdcb801f97a32c7195)
+
+---
+
+## [Architecture Patterns](https://github.com/michalzuch/object-oriented-software/tree/main/Architecture%20Patterns)
+
+✅ 3.0 Create one model with a controller for the products in accordance with CRUD | [Commit](https://github.com/michalzuch/object-oriented-software/commit/0e1ac3cf875b5375d815296183c79d9774a09013)  
+✅ 3.5 Create scripts to test endpoints using `curl` | [Commit](https://github.com/michalzuch/object-oriented-software/commit/d20baea97d1e34238cb30db485cbde64ded8befc)  
+✅ 4.0 Create another two controllers with models | [Commit](https://github.com/michalzuch/object-oriented-software/commit/62c7c0405f54f1e6745ff9f18962eb60c54b6b09)  
+❌ 4.5 Create views for all controllers  
+❌ 5.0 Create an administration panel with mocked login
