@@ -30,7 +30,6 @@ class ProductController extends AbstractController
         return new JsonResponse(['message' => 'Product created successfully'], Response::HTTP_CREATED);
     }
 
-
     #[Route('/product', name: 'app_product_show_all')]
     public function index(EntityManagerInterface $entityManager): Response
     {
@@ -68,8 +67,6 @@ class ProductController extends AbstractController
         return new JsonResponse($formattedProduct);
     }
 
-
-
     #[Route('/product/{id}', name: 'app_product_update', methods: ['PUT'])]
     public function update($id, Request $request, EntityManagerInterface $entityManager): JsonResponse
     {
@@ -91,8 +88,6 @@ class ProductController extends AbstractController
             return new JsonResponse(['message' => 'Product not found'], Response::HTTP_NOT_FOUND);
         }
     }
-
-
 
     #[Route('/product/{id}', name: 'app_product_delete', methods: ['DELETE'])]
     public function delete($id, EntityManagerInterface $entityManager): JsonResponse
