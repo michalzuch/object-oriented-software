@@ -2,7 +2,7 @@ package org.example.creationalpatterns.controllers
 
 import org.example.creationalpatterns.models.AuthRequest
 import org.example.creationalpatterns.models.products
-import org.example.creationalpatterns.services.AuthSingleton
+import org.example.creationalpatterns.services.LazyAuthSingleton
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class ProductController {
+//    @Autowired
+//    lateinit var authSingleton: EagerAuthSingleton
+
     @Autowired
-    lateinit var authSingleton: AuthSingleton
+    lateinit var authSingleton: LazyAuthSingleton
 
     @GetMapping("/products")
     fun getUsers(@RequestBody authRequest: AuthRequest): ResponseEntity<Any> {
