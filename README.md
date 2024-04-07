@@ -19,3 +19,11 @@ Projects built during Object Oriented Software classes at Jagiellonian Universit
 ✅ 4.0 Create another two controllers with models | [Commit](https://github.com/michalzuch/object-oriented-software/commit/62c7c0405f54f1e6745ff9f18962eb60c54b6b09)  
 ❌ 4.5 Create views for all controllers  
 ❌ 5.0 Create an administration panel with mocked login
+
+## [Creational Patterns](https://github.com/michalzuch/object-oriented-software/tree/main/Creational%20Patterns)
+
+✅ 3.0 Create a controller with data from endpoint list displayed as JSON | [Commit](https://github.com/michalzuch/object-oriented-software/commit/167505ddc11c4a8927cae7906f97e0a7a03729e3)  
+✅ 3.5 Create a mock authorization class as an eager Singleton | [Commit](https://github.com/michalzuch/object-oriented-software/commit/1c6614d75926adc890ac7eb0994b61889b67ad99)  
+✅ 4.0 Manage user authentication data | [Commit](https://github.com/michalzuch/object-oriented-software/commit/fa9b7993c43d09318e805f8410930a5212a8679a)  
+✅ 4.5 Inject a singleton into the main class using `@Autowired` | [Commit](https://github.com/michalzuch/object-oriented-software/commit/f4b97ab5a448ce986f313f57170ed28e91496e4c)  
+✅ 5.0 Create a lazy singleton along with an eager version | [Commit](https://github.com/michalzuch/object-oriented-software/commit/bb4151d8c80b5dec5bc4de769dd1207b04d3e30f)
