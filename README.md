@@ -24,6 +24,8 @@ https://github.com/michalzuch/object-oriented-software/assets/51276321/3573c8ad-
 
 https://github.com/michalzuch/object-oriented-software/assets/51276321/1646fce6-b1b9-4a70-a73a-dc1de6df60b5
 
+---
+
 ## [Creational Patterns](https://github.com/michalzuch/object-oriented-software/tree/main/Creational%20Patterns)
 
 ✅ 3.0 Create a controller with data from endpoint list displayed as JSON | [Commit](https://github.com/michalzuch/object-oriented-software/commit/167505ddc11c4a8927cae7906f97e0a7a03729e3)  
@@ -33,3 +35,13 @@ https://github.com/michalzuch/object-oriented-software/assets/51276321/1646fce6-
 ✅ 5.0 Create a lazy singleton along with an eager version | [Commit](https://github.com/michalzuch/object-oriented-software/commit/bb4151d8c80b5dec5bc4de769dd1207b04d3e30f)
 
 https://github.com/michalzuch/object-oriented-software/assets/51276321/ecfbafbe-c841-457d-95c7-c8411659f7c9
+
+---
+
+## [Structural Patterns](https://github.com/michalzuch/object-oriented-software/tree/main/Structural%20Patterns)
+
+✅ 3.0 Create an app using the Echo framework that includes a Weather controller | [Commit](https://github.com/michalzuch/object-oriented-software/commit/5661addadc9df81b724e295d944b937dbd005280)  
+✅ 3.5 Create a weather model using GORM, and load the data from the list at startup | [Commit](https://github.com/michalzuch/object-oriented-software/commit/694fa4543f5431a333a8544c9bb36468da2dcf3a)  
+✅ 4.0 Create a proxy class that downloads data from an API | [Commit](https://github.com/michalzuch/object-oriented-software/commit/d69d3fe99c08dc1da09989a89e2a921ff8d26b8d)  
+✅ 4.5 Save downloaded external data to the database | [Commit](https://github.com/michalzuch/object-oriented-software/commit/d69d3fe99c08dc1da09989a89e2a921ff8d26b8d)  
+✅ 5.0 Extend the endpoint to multiple locations, returning the response in JSON format | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2dfe2238281c7674c422bb58ebe4adf61c838646)
