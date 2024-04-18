@@ -2,18 +2,17 @@ package routes
 
 import (
 	"Structural_Patterns/controllers"
-	"gorm.io/gorm"
-
 	"github.com/labstack/echo/v4"
+	"gorm.io/gorm"
 )
 
 func SetupRoutes(e *echo.Echo, db *gorm.DB) {
-	e.GET("/weather", ReadWeatherHandler(db))
-	e.POST("/weather", ReadWeatherHandler(db))
+	e.GET("/weather/:city", GetWeatherHandler(db))
+	e.POST("/weather/:city", GetWeatherHandler(db))
 }
 
-func ReadWeatherHandler(db *gorm.DB) echo.HandlerFunc {
+func GetWeatherHandler(db *gorm.DB) echo.HandlerFunc {
 	return func(c echo.Context) error {
-		return controllers.ReadWeather(c)
+		return controllers.GetWeather(c, db)
 	}
 }

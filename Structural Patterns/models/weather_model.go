@@ -3,14 +3,16 @@ package models
 import "gorm.io/gorm"
 
 type Coord struct {
-	ID             uint    `gorm:"primary_key"`
+	gorm.Model
+	ID             uint    `gorm:"primary_key;autoIncrement"`
 	Lon            float64 `json:"lon"`
 	Lat            float64 `json:"lat"`
 	WeatherModelID uint
 }
 
 type Weather struct {
-	ID             uint   `gorm:"primary_key"`
+	gorm.Model
+	ID             uint   `gorm:"primary_key;autoIncrement"`
 	Main           string `json:"main"`
 	Description    string `json:"description"`
 	Icon           string `json:"icon"`
@@ -18,7 +20,8 @@ type Weather struct {
 }
 
 type Main struct {
-	ID             uint    `gorm:"primary_key"`
+	gorm.Model
+	ID             uint    `gorm:"primary_key;autoIncrement"`
 	Temp           float64 `json:"temp"`
 	FeelsLike      float64 `json:"feels_like"`
 	TempMin        float64 `json:"temp_min"`
@@ -31,7 +34,8 @@ type Main struct {
 }
 
 type Wind struct {
-	ID             uint    `gorm:"primary_key"`
+	gorm.Model
+	ID             uint    `gorm:"primary_key;autoIncrement"`
 	Speed          float64 `json:"speed"`
 	Deg            int     `json:"deg"`
 	Gust           float64 `json:"gust"`
@@ -39,19 +43,22 @@ type Wind struct {
 }
 
 type Rain struct {
-	ID             uint    `gorm:"primary_key"`
+	gorm.Model
+	ID             uint    `gorm:"primary_key;autoIncrement"`
 	OneH           float64 `json:"1h"`
 	WeatherModelID uint
 }
 
 type Clouds struct {
-	ID             uint `gorm:"primary_key"`
+	gorm.Model
+	ID             uint `gorm:"primary_key;autoIncrement"`
 	All            int  `json:"all"`
 	WeatherModelID uint
 }
 
 type Sys struct {
-	ID             uint   `gorm:"primary_key"`
+	gorm.Model
+	ID             uint   `gorm:"primary_key;autoIncrement"`
 	Type           int    `json:"type"`
 	Country        string `json:"country"`
 	Sunrise        int    `json:"sunrise"`
