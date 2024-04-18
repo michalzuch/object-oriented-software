@@ -3,14 +3,18 @@ package main
 import (
 	"Structural_Patterns/models"
 	"Structural_Patterns/routes"
-	"Structural_Patterns/services"
+	"github.com/joho/godotenv"
+	"github.com/labstack/echo/v4"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
-
-	"github.com/labstack/echo/v4"
 )
 
 func main() {
+	err := godotenv.Load(".env")
+	if err != nil {
+		panic("Failed to load .env file")
+	}
+
 	db, err := gorm.Open(sqlite.Open("data.db"), &gorm.Config{})
 	if err != nil {
 		panic("Failed to connect database")
@@ -19,12 +23,6 @@ func main() {
 	err = db.AutoMigrate(&models.Coord{}, &models.Weather{}, &models.Main{}, &models.Wind{}, &models.Rain{}, &models.Clouds{}, &models.Sys{}, &models.WeatherModel{})
 	if err != nil {
 		panic("Failed to migrate weather database")
-	}
-
-	var weatherData = services.ImportData()
-	result := db.Create(weatherData)
-	if result.Error != nil {
-		panic("Failed to save data in database")
 	}
 
 	e := echo.New()

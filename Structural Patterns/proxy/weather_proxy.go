@@ -1,0 +1,44 @@
+package proxy
+
+import (
+	"Structural_Patterns/models"
+	"encoding/json"
+	"io"
+	"net/http"
+	"os"
+)
+
+const (
+	BaseURL         = "https://api.openweathermap.org"
+	WeatherEndpoint = "/data/2.5/weather"
+	Parameters      = "?lat=44.34&lon=10.99"
+	APIParameter    = "&appid="
+)
+
+type WeatherProxy interface {
+	GetWeather() (models.WeatherModel, error)
+}
+
+type WeatherProxyImpl struct{}
+
+func (s *WeatherProxyImpl) GetWeather() (models.WeatherModel, error) {
+	OpenWeatherApi := os.Getenv("OPEN_WEATHER_API")
+	resp, err := http.Get(BaseURL + WeatherEndpoint + Parameters + APIParameter + OpenWeatherApi)
+	if err != nil {
+		return models.WeatherModel{}, err
+	}
+
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			panic("Failed to close the body")
+		}
+	}(resp.Body)
+
+	var weather models.WeatherModel
+	if err := json.NewDecoder(resp.Body).Decode(&weather); err != nil {
+		return models.WeatherModel{}, err
+	}
+
+	return weather, nil
+}

@@ -1,18 +1,17 @@
 package controllers
 
 import (
-	"Structural_Patterns/models"
-	"Structural_Patterns/scopes"
-	"gorm.io/gorm"
+	"Structural_Patterns/proxy"
 	"net/http"
 
 	"github.com/labstack/echo/v4"
 )
 
-func ReadWeather(c echo.Context, db *gorm.DB) error {
-	var weather models.WeatherModel
-	result := db.Scopes(scopes.WithAllSubmodels).First(&weather)
-	if result.Error != nil {
+func ReadWeather(c echo.Context) error {
+	service := &proxy.WeatherProxyImpl{}
+	weather, err := service.GetWeather()
+
+	if err != nil {
 		return c.JSON(http.StatusNotFound, "Weather data not found")
 	}
 

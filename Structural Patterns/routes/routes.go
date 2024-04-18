@@ -14,6 +14,6 @@ func SetupRoutes(e *echo.Echo, db *gorm.DB) {
 
 func ReadWeatherHandler(db *gorm.DB) echo.HandlerFunc {
 	return func(c echo.Context) error {
-		return controllers.ReadWeather(c, db)
+		return controllers.ReadWeather(c)
 	}
 }
