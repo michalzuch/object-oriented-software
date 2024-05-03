@@ -45,3 +45,15 @@ https://github.com/michalzuch/object-oriented-software/assets/51276321/ecfbafbe-
 ✅ 4.0 Create a proxy class that downloads data from an API | [Commit](https://github.com/michalzuch/object-oriented-software/commit/d69d3fe99c08dc1da09989a89e2a921ff8d26b8d)  
 ✅ 4.5 Save downloaded external data to the database | [Commit](https://github.com/michalzuch/object-oriented-software/commit/d69d3fe99c08dc1da09989a89e2a921ff8d26b8d)  
 ✅ 5.0 Extend the endpoint to multiple locations, returning the response in JSON format | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2dfe2238281c7674c422bb58ebe4adf61c838646)
+
+---
+
+## [Behavioral Patterns](https://github.com/michalzuch/object-oriented-software/tree/main/Behavioral%20Patterns)
+
+To create a client application using the React.js library, you need to build three components: Products, Bag, and Payments. The Bag and Payments components should send data to the server application, while the Products component should download product data from the server application. All data transfers between the components should be handled using React hooks.
+
+✅ 3.0 Create Products and Payments components | [Commit](https://github.com/michalzuch/object-oriented-software/commit/5fed65e569c703c8c81fe4d6d6cadc082a10a48f)  
+✅ 3.5 Add a shopping bag along with the view, use routing | [Commit](https://github.com/michalzuch/object-oriented-software/commit/f2dcef55acbd5efd6be72a0da5f52631d1d7644d)  
+✅ 4.0 Transfer data between components using React hooks | [Commit](https://github.com/michalzuch/object-oriented-software/commit/5fb6310e9876c47bb2765a325536ae1dd864677c)  
+✅ 4.5 Run the server and client applications on Docker using docker-compose | [Commit](https://github.com/michalzuch/object-oriented-software/commit/452559366fb220d4235ef5c28e8c117684d6f11c)  
+✅ 5.0 Use Axios and add CORS headers | [Commit](https://github.com/michalzuch/object-oriented-software/commit/5fed65e569c703c8c81fe4d6d6cadc082a10a48f)
