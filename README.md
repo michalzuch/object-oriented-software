@@ -61,3 +61,27 @@ To create a client application using the React.js library, you need to build thr
 ✅ 5.0 Use Axios and add CORS headers | [Commit](https://github.com/michalzuch/object-oriented-software/commit/5fed65e569c703c8c81fe4d6d6cadc082a10a48f)
 
 https://github.com/michalzuch/object-oriented-software/assets/51276321/79219fde-b720-4cf2-a5ba-5d3f98a6903c
+
+---
+
+## [Code Smells](https://github.com/michalzuch/object-oriented-software/tree/main/Code%20Smells)
+
+Add the client and server application projects to Sonar in the cloud version. Improve the applications to achieve 0 bugs, 0 vulnerabilities, and 0 security errors. Additionally, include Sonar widgets in the project's README with the results.
+
+✅ 3.0 Add ESLint in Git hooks | [Commit](https://github.com/michalzuch/object-oriented-software/commit/4518deeff77ece849b55a89479e659e890d62c59)  
+✅ 3.5 Eliminate all bugs in the server code | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2998630b96c0b9311262eb957fccb5ae7af2d0fc)  
+✅ 4.0 Eliminate all code smells in the server code | [Commit](https://github.com/michalzuch/object-oriented-software/commit/c778275ab04a025843cb813ba9c9dfce03bd65a5)  
+✅ 4.5 Eliminate all vulnerabilities and security issues in the server code | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2998630b96c0b9311262eb957fccb5ae7af2d0fc)  
+✅ 5.0 Eliminate all code smells in the client code | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2998630b96c0b9311262eb957fccb5ae7af2d0fc)
+
+---
+
+## [Antipatterns](https://github.com/michalzuch/object-oriented-software/tree/main/Antipatterns)
+
+Create a simple Vapor application using Leaf as the template engine or Fluent as the ORM. Implement three models with CRUD functionality for each. Include at least one model with a relationship.
+
+✅ 3.0 Create a CRUD compliant controller and Product models in ORM Fluent | [Commit](https://github.com/michalzuch/object-oriented-software/commit/ee618c27f510a38b61409bd316d59a1e7c8e9333)  
+❌ 3.5 Create templates in Leaf  
+❌ 4.0 Create second controller and Categories controller along with the relationship  
+❌ 4.5 Use Redis to store data  
+❌ 5.0 Deploy application on Heroku
