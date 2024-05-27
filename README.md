@@ -74,6 +74,8 @@ Add the client and server application projects to Sonar in the cloud version. Im
 ✅ 4.5 Eliminate all vulnerabilities and security issues in the server code | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2998630b96c0b9311262eb957fccb5ae7af2d0fc)  
 ✅ 5.0 Eliminate all code smells in the client code | [Commit](https://github.com/michalzuch/object-oriented-software/commit/2998630b96c0b9311262eb957fccb5ae7af2d0fc)
 
+https://github.com/michalzuch/object-oriented-software/assets/51276321/268c7d84-998f-43c7-8bee-d029ccb86add
+
 ---
 
 ## [Antipatterns](https://github.com/michalzuch/object-oriented-software/tree/main/Antipatterns)
