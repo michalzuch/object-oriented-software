@@ -88,6 +88,8 @@ Create a simple Vapor application using Leaf as the template engine or Fluent as
 ❌ 4.5 Use Redis to store data  
 ❌ 5.0 Deploy application on Heroku
 
+https://github.com/michalzuch/object-oriented-software/assets/51276321/fab93e55-b827-4fb6-b9c4-cc5dd65b1d83
+
 ---
 
 ## [Mobile First](https://github.com/michalzuch/object-oriented-software/tree/main/MobileFirst)
@@ -98,6 +100,8 @@ Create a simple Vapor application using Leaf as the template engine or Fluent as
 ❌ 4.5 Add payments via Stripe  
 ❌ 5.0 Sign in and sign up via OAuth2
 
+https://github.com/michalzuch/object-oriented-software/assets/51276321/1819cd15-36db-467c-8ef3-68a9be5894f3
+
 ---
 
 ## [Tests](https://github.com/michalzuch/object-oriented-software/tree/main/Tests)
@@ -107,3 +111,5 @@ Create a simple Vapor application using Leaf as the template engine or Fluent as
 ✅ 4.0 Create unit tests for a previous project, ensuring a minimum of 50 assertions | [Commit](https://github.com/michalzuch/object-oriented-software/commit/7437530051ce6d9b1ab580d4ac24f6dff6ed08e6)  
 ❌ 4.5 Add API tests to cover all endpoints, including at least one negative scenario per endpoint  
 ❌ 5.0 Run functional tests on Browserstack
+
+https://github.com/michalzuch/object-oriented-software/assets/51276321/25bd8192-7ca2-4fe2-8fb6-d1f548955b90
