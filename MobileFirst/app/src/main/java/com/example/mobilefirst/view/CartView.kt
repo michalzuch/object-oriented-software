@@ -1,4 +1,4 @@
-package com.example.mobilefirst
+package com.example.mobilefirst.view
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -9,6 +9,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.mobilefirst.model.Product
 
 @Composable
 fun CartView(cartItems: List<Product>) {

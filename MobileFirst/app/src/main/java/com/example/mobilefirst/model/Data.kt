@@ -1,4 +1,4 @@
-package com.example.mobilefirst
+package com.example.mobilefirst.model
 
 data class Category(val id: Int, val name: String, val products: List<Product>)
 data class Product(

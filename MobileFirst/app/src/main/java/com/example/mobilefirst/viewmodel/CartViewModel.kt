@@ -1,7 +1,8 @@
-package com.example.mobilefirst
+package com.example.mobilefirst.viewmodel
 
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
+import com.example.mobilefirst.model.Product
 
 class CartViewModel : ViewModel() {
     private val _cartItems = mutableStateListOf<Product>()

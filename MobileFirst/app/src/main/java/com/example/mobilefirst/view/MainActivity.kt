@@ -1,4 +1,4 @@
-package com.example.mobilefirst
+package com.example.mobilefirst.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,6 +10,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.mobilefirst.viewmodel.CartViewModel
+import com.example.mobilefirst.viewmodel.CategoryViewModel
 import com.example.mobilefirst.ui.theme.MobileFirstTheme
 
 class MainActivity : ComponentActivity() {
