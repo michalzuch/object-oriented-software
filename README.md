@@ -87,3 +87,23 @@ Create a simple Vapor application using Leaf as the template engine or Fluent as
 ❌ 4.0 Create second controller and Categories controller along with the relationship  
 ❌ 4.5 Use Redis to store data  
 ❌ 5.0 Deploy application on Heroku
+
+---
+
+## [Mobile First](https://github.com/michalzuch/object-oriented-software/tree/main/MobileFirst)
+
+✅ 3.0 Create a list of categories and products | [Commit](https://github.com/michalzuch/object-oriented-software/commit/979b83b700aa997040d32cf0ec4c4d2c0503ccf3)  
+✅ 3.5 Create cart | [Commit](https://github.com/michalzuch/object-oriented-software/commit/6698c8d8e0cb52e90bf45ef74c5550f675ff594f)  
+❌ 4.0 Create database in Realm  
+❌ 4.5 Add payments via Stripe  
+❌ 5.0 Sign in and sign up via OAuth2
+
+---
+
+## [Tests](https://github.com/michalzuch/object-oriented-software/tree/main/Tests)
+
+✅ 3.0 Create 20 test cases in CypressJS | [Commit](https://github.com/michalzuch/object-oriented-software/commit/ee374595fc3e2b5718ddd0c2cf41a7ffd1abbd79)  
+✅ 3.5 Extend the functional tests to include at least 50 assertions | [Commit](https://github.com/michalzuch/object-oriented-software/commit/ee374595fc3e2b5718ddd0c2cf41a7ffd1abbd79)  
+✅ 4.0 Create unit tests for a previous project, ensuring a minimum of 50 assertions | [Commit](https://github.com/michalzuch/object-oriented-software/commit/7437530051ce6d9b1ab580d4ac24f6dff6ed08e6)  
+❌ 4.5 Add API tests to cover all endpoints, including at least one negative scenario per endpoint  
+❌ 5.0 Run functional tests on Browserstack
